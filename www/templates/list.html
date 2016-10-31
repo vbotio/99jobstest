@@ -1,0 +1,15 @@
+<section>
+	<form>
+		<input type="text" placeholder="type to search...">	
+	</form>
+	<div class="cardsWrapper">
+		<div class="card" ng-repeat="card in card">
+			<img src="{{ card.image }}.jpg" alt="">
+			<div class="details">
+				<p class="title">{{ card.movieName }}</p>
+				<p class="cat">{{ card.category }}</p>
+				<p class="body">{{ card.description }}</p>	
+			</div>
+		</div>
+	</div>
+</section>

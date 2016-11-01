@@ -1,9 +1,13 @@
 <section>
+	<div class="header">
+		<img src="img/logo.png" alt="logo">
+		<input type="text" placeholder="lorem ipsum">
+	</div> 
 	<form>
-		<input type="text" placeholder="type to search...">	
+		<input type="text" placeholder="type to search..." ng-model="movies">	
 	</form>
 	<div class="cardsWrapper">
-		<div class="card" ng-repeat="card in card">
+		<div class="card" ng-repeat="card in card | filter:movies">
 			<img src="{{ card.image }}.jpg" alt="">
 			<div class="details">
 				<p class="title">{{ card.movieName }}</p>

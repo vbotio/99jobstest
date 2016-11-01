@@ -10,6 +10,7 @@ app.config(function($routeProvider){
 
 app.controller('mainController', function($scope, $http){
 	$scope.card = [];
+	$scope.movies = '';
 
 	$http({
 		method: 'GET', 

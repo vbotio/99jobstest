@@ -8,6 +8,7 @@ html {
 			justify-content: center;
 			section {
 				width:1024px;
+				max-width: 95%;
 				height: auto;
 				float:left;
 				margin:0 auto;
@@ -102,5 +103,27 @@ html {
 				}
 			}	
 		}
+	}
+}
+
+@media screen and (max-width: 500px ) {
+	body {
+		overflow-x: hidden!important;
+		.header {
+			display: flex;
+			flex-wrap: wrap;
+			&:after {
+				height: 115px!important;
+			}
+			input {
+				margin:15px auto;
+			}
+		}
+		.cardsWrapper {
+			column-count: 2!important;
+			.card {
+				width:140px!important;
+			}
+		}	
 	}
 }
